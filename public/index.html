@@ -4,433 +4,405 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scatigno Seguros — Corretora de seguros desde 1967 em Pinheiros, SP</title>
+<meta name="description" content="Corretora de seguros desde 1967 em Pinheiros, São Paulo. Seguro auto, residencial, vida, empresarial, consórcio e previdência com atendimento humano.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="assets/mark-red.svg" type="image/svg+xml">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 <style>
 body{margin:0;background:#FFFFFF}
 a{color:#C42226;text-decoration:none}a:hover{color:#9E1A1E}
-</style>
-
-<style>
-.chip{font:inherit;font-size:14px;font-weight:700;padding:12px 8px;border-radius:12px;min-height:46px;cursor:pointer;background:#FFFFFF;color:#1B1717;border:1.5px solid #E2DAD9}
-.chip.on{background:#C42226;color:#FFFFFF;border-color:#C42226}
-.chip.pill{padding:11px 18px;border-radius:999px;min-height:44px}
-.chip.pill.on{background:#1B1717;border-color:#1B1717}
-.tab{font:inherit;font-size:15px;font-weight:700;padding:12px 20px;border-radius:999px;border:0;min-height:44px;cursor:pointer;background:transparent;color:#5E5656}
-.tab.on{background:#FFFFFF;color:#1B1717;box-shadow:0 2px 8px rgba(27,23,23,.10)}
-summary::-webkit-details-marker{display:none}
-details[open] .sign{font-size:0}details[open] .sign::after{content:"−";font-size:20px}
-html{scroll-behavior:smooth}
-.menu-btn{display:none}
-@media (max-width:900px){
- header > div{flex-wrap:wrap!important;gap:10px!important}
- header > div > a:first-child img{height:34px!important}
- .menu-btn{display:flex;order:3;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;border:1.5px solid #E2DAD9;background:#fff;color:#1B1717;cursor:pointer;margin-left:8px}
- header > div > a:last-child{order:2;margin-left:auto;padding:10px 14px!important;font-size:13.5px!important}
- .mainnav{display:none!important;order:4;width:100%;flex-direction:column;gap:0!important;border-top:1px solid #EEE8E7;padding-top:6px}
- .mainnav.open{display:flex!important}
- .mainnav a{padding:14px 0!important;border-bottom:1px solid #F3EEED}
- .topbar-txt{display:none}
-}[id]{scroll-margin-top:110px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.eyebrow{font-size:13px;font-weight:700;color:#9E1A1E;letter-spacing:.08em;text-transform:uppercase}
+.h2{margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-.025em;font-weight:800}
+.card{display:flex;flex-direction:column;gap:14px;padding:28px;border-radius:22px;border:1px solid #EEE8E7;background:#FFFFFF;color:#1B1717}
+.card .ico{width:52px;height:52px;border-radius:14px;background:#FBEDEC;color:#C42226;display:flex;align-items:center;justify-content:center}
+.card .t{font-size:20px;font-weight:800;letter-spacing:-.01em}
+.card .d{font-size:15px;line-height:1.55;color:#5E5656}
+.card .l{font-size:15px;font-weight:700;color:#C42226}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+@media (max-width:560px){
+ [aria-label="Tipo de seguro"]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #qGo{font-size:15px!important;flex-wrap:wrap}
+ .collage{min-height:400px!important}
+ .rot{display:grid}
+}
+@media (max-width:900px){.hero-media{max-width:420px;margin:0 auto}.chip-float.cf-1{left:-6px!important}.chip-float.cf-2{right:-6px!important}}
 </style>
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
+<div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1B1717;background:#FFFFFF;width:100%;min-height:100vh;overflow-x:hidden">
 
-<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #1B1717; background: #FFFFFF; width: 100%; min-height: 100vh">
-
-  <!-- Barra de urgência -->
-  <div style="background: #1B1717; color: #FFFFFF; font-size: 13px">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: center">
-      <span class="topbar-txt" style="color: #E9E3E2">Corretora de seguros desde 1967 · Pinheiros, São Paulo</span>
-      <span style="display: flex; gap: 20px; flex-wrap: wrap">
-        <a href="#sinistro" style="color: #FFFFFF; font-weight: 600">Sinistro e Assistência 24h</a>
-        <a href="tel:+551138257155" style="color: #FFFFFF">(11) 3825-7155</a>
+  <!-- Barra superior -->
+  <div style="background:#1B1717;color:#FFFFFF;font-size:13px">
+    <div class="wrap" style="padding-top:10px;padding-bottom:10px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center">
+      <span class="topbar-txt" style="color:#E9E3E2">Protegendo histórias desde 1967 · Pinheiros, São Paulo</span>
+      <span style="display:flex;gap:20px;flex-wrap:wrap">
+        <a href="#sinistro" style="color:#FFFFFF;font-weight:600">Sinistro e Assistência 24h</a>
+        <a href="tel:+551136603660" style="color:#FFFFFF">(11) 3660-3660</a>
       </span>
     </div>
   </div>
 
   <!-- Header -->
-  <header style="background: #FFFFFF; border-bottom: 1px solid #EEE8E7; position: sticky; top: 0; z-index: 10">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
-      <a href="index.html" aria-label="Scatigno Seguros — início" style="display: flex">
-        <img src="assets/logo-oficial-cor.png" alt="Scatigno Seguros" style="height: 48px; width: auto; display: block">
+  <header style="background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #EEE8E7;position:sticky;top:0;z-index:50">
+    <div class="wrap" style="padding-top:14px;padding-bottom:14px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between">
+      <a href="index.html" aria-label="Scatigno Seguros — início" style="display:flex">
+        <img src="assets/logo-oficial-cor.png" alt="Scatigno Seguros" style="height:48px;width:auto;display:block">
       </a>
-      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mainnav" aria-label="Abrir menu"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav id="mainnav" class="mainnav" aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 4px 26px; font-size: 15px; font-weight: 600">
-        <a href="#seguros" style="color: #1B1717; padding: 10px 0">Para você</a>
-        <a href="#seguros" style="color: #1B1717; padding: 10px 0">Para empresas</a>
-        <a href="#seguros" style="color: #1B1717; padding: 10px 0">Soluções financeiras</a>
-        <a href="#sinistro" style="color: #1B1717; padding: 10px 0">Sinistro</a>
-        <a href="blog.html" style="color: #1B1717; padding: 10px 0">Blog</a>
-        <a href="#sobre" style="color: #1B1717; padding: 10px 0">Sobre</a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mainnav" aria-label="Abrir menu"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav id="mainnav" class="mainnav" aria-label="Principal" style="display:flex;flex-wrap:wrap;gap:4px 26px;font-size:15px;font-weight:600">
+        <a href="#seguros" style="color:#1B1717;padding:10px 0">Para você</a>
+        <a href="#seguros" style="color:#1B1717;padding:10px 0">Para empresas</a>
+        <a href="#seguros" style="color:#1B1717;padding:10px 0">Soluções financeiras</a>
+        <a href="#sinistro" style="color:#1B1717;padding:10px 0">Sinistro</a>
+        <a href="blog.html" style="color:#1B1717;padding:10px 0">Blog</a>
+        <a href="#sobre" style="color:#1B1717;padding:10px 0">Sobre</a>
       </nav>
-      <div style="display: flex; gap: 10px; align-items: center">
-        <a href="https://wa.me/5511953270751" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; background: #C42226; color: #FFFFFF; font-weight: 700; font-size: 15px; min-height: 44px; box-sizing: border-box">Fazer cotação</a>
-      </div>
+      <a class="btn" href="#cotacao" style="display:inline-flex;align-items:center;padding:12px 18px;border-radius:999px;background:#C42226;color:#FFFFFF;font-weight:700;font-size:15px;min-height:44px;box-sizing:border-box">Fazer cotação</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section style="background: #FFFFFF">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 80px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: #FBEDEC; color: #9E1A1E; font-size: 13px; font-weight: 700; letter-spacing: 0.02em">
+  <!-- HERO -->
+  <section style="position:relative;background:#FFFFFF">
+    <img src="assets/mark-red.svg" alt="" aria-hidden="true" class="spin-slow" style="position:absolute;left:-260px;top:-180px;width:620px;height:620px;opacity:.04;pointer-events:none">
+    <div class="wrap" style="position:relative;padding-top:64px;padding-bottom:80px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+      <div style="flex:1 1 500px;min-width:0;display:flex;flex-direction:column;gap:24px">
+        <span class="rv" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#FBEDEC;color:#9E1A1E;font-size:13px;font-weight:700;letter-spacing:.02em">
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-          Quase 60 anos protegendo famílias e empresas
+          Quase 60 anos protegendo histórias
         </span>
-        <h1 style="margin: 0; font-size: clamp(38px, 5vw, 60px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800">Seguro bem feito é o que funciona quando você mais precisa.</h1>
-        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #5E5656; max-width: 560px">A Scatigno compara as principais seguradoras do país para encontrar a cobertura certa para você, sua família e sua empresa — e fica do seu lado na hora do sinistro.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
-          <a href="#cotacao" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #C42226; color: #FFFFFF; font-weight: 700; font-size: 16px">
+        <h1 class="rv" style="--d:.08s;margin:0;font-size:clamp(38px,5.2vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:800">
+          Proteção de verdade para
+          <span class="rot" aria-live="polite"><span>sua família.</span><span>o seu carro.</span><span>a sua empresa.</span><span>o seu futuro.</span><span>a sua casa.</span></span>
+        </h1>
+        <p class="rv" style="--d:.16s;margin:0;font-size:19px;line-height:1.6;color:#5E5656;max-width:560px">A Scatigno compara as principais seguradoras do país, monta a cobertura certa para o seu momento e fica do seu lado na hora do sinistro.</p>
+        <div class="rv" style="--d:.24s;display:flex;flex-wrap:wrap;gap:12px;padding-top:6px">
+          <a class="btn" href="#cotacao" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;background:#C42226;color:#FFFFFF;font-weight:700;font-size:16px">
             Cotar meu seguro
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
-          <a href="https://wa.me/5511953270751" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #FFFFFF; color: #1B1717; font-weight: 700; font-size: 16px; border: 1.5px solid #E2DAD9">
-            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>
-            Falar no WhatsApp
-          </a>
+          <button type="button" data-video="assets/video/sobre.mp4" data-poster="assets/video/sobre.jpg" style="font:inherit;display:inline-flex;align-items:center;gap:12px;padding:10px 22px 10px 10px;border-radius:999px;background:#FFFFFF;color:#1B1717;font-weight:700;font-size:16px;border:1.5px solid #E2DAD9;cursor:pointer">
+            <span style="width:40px;height:40px;border-radius:999px;background:#1B1717;color:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span>
+            Conheça a Scatigno
+          </button>
+        </div>
+        <div class="rv" style="--d:.32s;display:flex;flex-wrap:wrap;gap:28px;padding-top:18px;border-top:1px solid #EEE8E7;margin-top:8px">
+          <div style="display:flex;flex-direction:column"><span style="font-size:30px;font-weight:800;color:#C42226;letter-spacing:-.03em"><span data-count="59">59</span> anos</span><span style="font-size:14px;color:#5E5656">de mercado</span></div>
+          <div style="display:flex;flex-direction:column"><span style="font-size:30px;font-weight:800;color:#C42226;letter-spacing:-.03em">24h</span><span style="font-size:14px;color:#5E5656">assistência</span></div>
+          <div style="display:flex;flex-direction:column"><span style="font-size:30px;font-weight:800;color:#C42226;letter-spacing:-.03em">Brasil</span><span style="font-size:14px;color:#5E5656">todo o território</span></div>
         </div>
       </div>
 
-      <!-- Painel de cotação rápida -->
-      <div id="cotacao" style="flex: 1 1 420px; min-width: 0; position: relative; background: #C42226; border-radius: 32px; padding: 40px; overflow: hidden; box-sizing: border-box">
-        <img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position: absolute; right: -90px; bottom: -110px; width: 420px; height: 420px; opacity: 0.12">
-        <div style="position: relative; background: #FFFFFF; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 48px rgba(80, 10, 12, 0.25)">
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <span style="font-size: 13px; font-weight: 700; color: #9E1A1E; letter-spacing: 0.06em; text-transform: uppercase">Cotação rápida</span>
-            <h2 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 800">Que seguro você procura?</h2>
-          </div>
-          <div role="group" aria-label="Tipo de seguro" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
-            <button type="button" class="chip" data-chip="Auto" aria-pressed="false">Auto</button><button type="button" class="chip" data-chip="Residencial" aria-pressed="false">Residencial</button><button type="button" class="chip" data-chip="Vida" aria-pressed="false">Vida</button><button type="button" class="chip" data-chip="Empresarial" aria-pressed="false">Empresarial</button><button type="button" class="chip" data-chip="Saúde" aria-pressed="false">Saúde</button><button type="button" class="chip" data-chip="Consórcio" aria-pressed="false">Consórcio</button>
-          </div>
-          <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1717">
-            Seu WhatsApp
-            <input type="tel" placeholder="(11) 90000-0000" style="font: inherit; font-weight: 500; padding: 14px 16px; border-radius: 12px; border: 1.5px solid #E2DAD9; min-height: 48px; box-sizing: border-box">
-          </label>
-          <button type="button" style="font: inherit; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 999px; border: 0; background: #1B1717; color: #FFFFFF; min-height: 52px; cursor: pointer">Receber cotação de <span id="selLabel">Seguro Auto</span></button>
-          <span style="font-size: 13px; color: #6B6262; text-align: center">Um corretor responde no horário comercial. Sem compromisso.</span>
+      <div class="hero-media rv rv-s" style="--d:.15s;flex:1 1 380px;min-width:0;position:relative;max-width:460px">
+        <div class="hero-video">
+          <video id="heroVid" src="assets/video/sobre.mp4" poster="assets/video/sobre.jpg" muted loop playsinline autoplay preload="metadata" data-autoplay aria-label="Vídeo institucional da Scatigno Seguros"></video>
+          <button type="button" class="sound" data-sound="heroVid" aria-pressed="false">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+            <span>Ouvir o vídeo</span>
+          </button>
+        </div>
+        <div class="chip-float cf-1 float" style="left:-44px;top:56px">
+          <span style="width:40px;height:40px;border-radius:12px;background:#C42226;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">S</span>
+          <span><b style="display:block;font-size:15px">Desde 1967</b><span style="color:#5E5656">Tradição em Pinheiros</span></span>
+        </div>
+        <div class="chip-float cf-2 float f2" style="right:-36px;top:46%">
+          <span style="width:40px;height:40px;border-radius:12px;background:#FBEDEC;color:#C42226;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg></span>
+          <span><b style="display:block;font-size:15px">Gente de verdade</b><span style="color:#5E5656">no atendimento</span></span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Faixa de confiança -->
-  <section id="sobre" style="border-top: 1px solid #EEE8E7; border-bottom: 1px solid #EEE8E7; background: #FAF8F7">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 36px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px">
-      <div style="display: flex; flex-direction: column; gap: 4px">
-        <span style="font-size: 34px; font-weight: 800; color: #C42226; letter-spacing: -0.03em">1967</span>
-        <span style="font-size: 15px; color: #5E5656">Fundada em São Paulo, no bairro de Pinheiros</span>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 4px">
-        <span style="font-size: 34px; font-weight: 800; color: #C42226; letter-spacing: -0.03em">[nº]</span>
-        <span style="font-size: 15px; color: #5E5656">Seguradoras parceiras para comparar</span>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 4px">
-        <span style="font-size: 34px; font-weight: 800; color: #C42226; letter-spacing: -0.03em">Brasil</span>
-        <span style="font-size: 15px; color: #5E5656">Atendimento em todo o território nacional</span>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 4px">
-        <span style="font-size: 34px; font-weight: 800; color: #C42226; letter-spacing: -0.03em">24h</span>
-        <span style="font-size: 15px; color: #5E5656">Assistência e apoio no sinistro</span>
+  <!-- Faixa rolante -->
+  <div style="background:#C42226;color:#FFFFFF;padding:18px 0;font-weight:800;font-size:clamp(18px,2.2vw,26px);letter-spacing:-.01em">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Seguro Auto</span><span style="opacity:.5">✦</span><span>Residencial</span><span style="opacity:.5">✦</span><span>Vida</span><span style="opacity:.5">✦</span><span>Empresarial</span><span style="opacity:.5">✦</span><span>Consórcio</span><span style="opacity:.5">✦</span><span>Previdência</span><span style="opacity:.5">✦</span><span>Saúde</span><span style="opacity:.5">✦</span><span>Proteção de renda PJ</span><span style="opacity:.5">✦</span><span>Condomínio</span><span style="opacity:.5">✦</span>
+        <span>Seguro Auto</span><span style="opacity:.5">✦</span><span>Residencial</span><span style="opacity:.5">✦</span><span>Vida</span><span style="opacity:.5">✦</span><span>Empresarial</span><span style="opacity:.5">✦</span><span>Consórcio</span><span style="opacity:.5">✦</span><span>Previdência</span><span style="opacity:.5">✦</span><span>Saúde</span><span style="opacity:.5">✦</span><span>Proteção de renda PJ</span><span style="opacity:.5">✦</span><span>Condomínio</span><span style="opacity:.5">✦</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Seguros por perfil -->
-  <section id="seguros" style="background: #FFFFFF">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-      <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
-        <div style="display: flex; flex-direction: column; gap: 12px; max-width: 620px">
-          <span style="font-size: 13px; font-weight: 700; color: #9E1A1E; letter-spacing: 0.08em; text-transform: uppercase">Seguros e soluções</span>
-          <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800">Proteção para cada momento da sua vida e do seu negócio</h2>
+  <!-- Seguros -->
+  <section id="seguros" style="background:#FFFFFF">
+    <div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end">
+        <div class="rv" style="display:flex;flex-direction:column;gap:12px;max-width:620px">
+          <span class="eyebrow">Seguros e soluções</span>
+          <h2 class="h2">Proteção para cada momento da sua vida e do seu negócio</h2>
         </div>
-        <div role="tablist" aria-label="Perfil" style="display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border-radius: 999px; background: #F4F0EF">
+        <div class="rv" role="tablist" aria-label="Perfil" style="--d:.1s;display:flex;flex-wrap:wrap;gap:6px;padding:6px;border-radius:999px;background:#F4F0EF">
           <button type="button" role="tab" class="tab" data-tab="voce" aria-selected="false">Para você</button><button type="button" role="tab" class="tab" data-tab="empresa" aria-selected="false">Para empresas</button><button type="button" role="tab" class="tab" data-tab="fin" aria-selected="false">Soluções financeiras</button>
         </div>
       </div>
 
-      <div data-panel="voce">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2.2-5.5A2 2 0 0 1 7 6h10a2 2 0 0 1 1.8 1.5L21 13v4H3z"/><path d="M3 13h18"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro Auto</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Carro, moto e motorista de aplicativo, com assistência 24h e carro reserva.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9.5 20v-6h5v6"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro Residencial</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Casa ou apartamento, próprio ou alugado, com serviços de chaveiro, encanador e eletricista.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro de Vida</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Tranquilidade financeira para quem você ama, individual ou em grupo.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Saúde e Odonto</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Planos individuais, familiares e empresariais com a rede certa para você.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16.5 6.5l3 3"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro Fiança Aluguel</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Alugue sem fiador e sem burocracia, com garantia aceita pelas imobiliárias.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
+      <div data-panel="voce" class="grid-cards">
+        <a href="seguro-auto.html" class="card lift rv" style="--d:0s"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2.2-5.5A2 2 0 0 1 7 6h10a2 2 0 0 1 1.8 1.5L21 13v4H3z"/><path d="M3 13h18"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg></span><span class="t">Seguro Auto</span><span class="d">Carro, moto e motorista de aplicativo, com assistência 24h e carro reserva.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift rv" style="--d:.06s"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9.5 20v-6h5v6"/></svg></span><span class="t">Seguro Residencial</span><span class="d">Casa ou apartamento, próprio ou alugado, com chaveiro, encanador e eletricista.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift rv" style="--d:.12s"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.2a4.2 4.2 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg></span><span class="t">Seguro de Vida</span><span class="d">Tranquilidade financeira para quem você ama, individual ou em grupo.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift rv" style="--d:.18s"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span class="t">Proteção de renda (PJ)</span><span class="d">Para autônomos e profissionais liberais: renda garantida se você precisar se afastar.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+      </div>
+      <div data-panel="empresa" class="grid-cards" hidden>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 21V9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 13h2M15 17h2"/></svg></span><span class="t">Seguro Empresarial</span><span class="d">Patrimônio, equipamentos, lucros cessantes e responsabilidade civil.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l5-3 5 3v13M13 21V11h8v10M2 21h20M6 11h4M6 15h4"/></svg></span><span class="t">Seguro Condomínio</span><span class="d">Cobertura obrigatória e extras para síndicos e administradoras.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><span class="t">Transportes e frota</span><span class="d">Carga protegida do embarque à entrega, e frota segurada.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span><span class="t">Vida em Grupo e Saúde PME</span><span class="d">Benefícios que ajudam a atrair e reter a sua equipe.</span><span class="l">Ver coberturas <span class="arrow">→</span></span></a>
+      </div>
+      <div data-panel="fin" class="grid-cards" hidden>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><span class="t">Consórcio</span><span class="d">Imóvel, veículo ou frota: planejamento sem juros para a sua próxima conquista.</span><span class="l">Ver opções <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span><span class="t">Previdência Privada</span><span class="d">PGBL ou VGBL e planejamento sucessório com orientação de quem entende.</span><span class="l">Ver opções <span class="arrow">→</span></span></a>
+        <a href="seguro-auto.html" class="card lift"><span class="ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span><span class="t">Financiamento e Crédito</span><span class="d">Financiamento de veículos e crédito com boas condições de mercado.</span><span class="l">Ver opções <span class="arrow">→</span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vídeos -->
+  <section style="background:#1B1717;color:#FFFFFF;position:relative;overflow:hidden">
+    <img src="assets/mark-white.svg" alt="" aria-hidden="true" data-parallax="-0.15" style="position:absolute;right:-120px;top:40px;width:520px;height:520px;opacity:.05;pointer-events:none">
+    <div class="wrap" style="position:relative;padding-top:88px;padding-bottom:28px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end">
+      <div class="rv" style="display:flex;flex-direction:column;gap:12px;max-width:620px">
+        <span class="eyebrow" style="color:#FFB4B0">Scatigno em vídeo</span>
+        <h2 class="h2">Quem cuida do seu seguro tem rosto, nome e sobrenome</h2>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#D9D1D0">Conheça o escritório, a equipe e o jeito Scatigno de atender. Toque em um vídeo para assistir com som.</p>
+      </div>
+      <a class="rv" href="https://www.instagram.com/scatignoseguros/" target="_blank" rel="noopener" style="--d:.1s;color:#FFFFFF;font-weight:700;display:inline-flex;gap:8px;align-items:center">Mais no Instagram <span aria-hidden="true">→</span></a>
+    </div>
+    <div style="max-width:1248px;margin:0 auto;position:relative">
+      <div class="reels" style="padding-bottom:88px">
+        <button type="button" class="reel rv" style="--d:0s" data-video="assets/video/sobre.mp4" data-poster="assets/video/sobre.jpg"><video src="assets/video/sobre-prev.mp4" poster="assets/video/sobre.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><span class="play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="meta"><span class="tag">Institucional</span><span class="ttl">Quase 60 anos de base sólida</span></span></button>
+        <button type="button" class="reel rv" style="--d:.08s" data-video="assets/video/empresas.mp4" data-poster="assets/video/empresas.jpg"><video src="assets/video/empresas-prev.mp4" poster="assets/video/empresas.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><span class="play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="meta"><span class="tag">Empresas</span><span class="ttl">Você não precisa passar por esse problema sozinho</span></span></button>
+        <button type="button" class="reel rv" style="--d:.16s" data-video="assets/video/corretor.mp4" data-poster="assets/video/corretor.jpg"><video src="assets/video/corretor-prev.mp4" poster="assets/video/corretor.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><span class="play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="meta"><span class="tag">Atendimento</span><span class="ttl">Corretor é pra sempre</span></span></button>
+        <button type="button" class="reel rv" style="--d:.24s" data-video="assets/video/carro-novo.mp4" data-poster="assets/video/carro-novo.jpg"><video src="assets/video/carro-novo-prev.mp4" poster="assets/video/carro-novo.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><span class="play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="meta"><span class="tag">Consórcio</span><span class="ttl">Já pensou em planejar seu carro novo?</span></span></button>
+        <button type="button" class="reel rv" style="--d:.32s" data-video="assets/video/outubro-rosa.mp4" data-poster="assets/video/outubro-rosa.jpg"><video src="assets/video/outubro-rosa-prev.mp4" poster="assets/video/outubro-rosa.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><span class="play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></span><span class="meta"><span class="tag">Bastidores</span><span class="ttl">Outubro Rosa na Scatigno</span></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por que a Scatigno -->
+  <section id="sobre" style="background:#FAF8F7">
+    <div class="wrap" style="padding-top:104px;padding-bottom:104px;display:flex;flex-wrap:wrap;gap:64px;align-items:center">
+      <div class="collage" style="flex:1 1 440px;min-width:0;position:relative;min-height:520px">
+        <div class="zoom rv rv-l" style="position:absolute;left:0;top:0;width:72%;aspect-ratio:4/5;border-radius:26px;box-shadow:0 30px 60px rgba(27,23,23,.16)">
+          <img src="assets/ig/equipe.jpg" alt="Equipe da Scatigno Seguros reunida no escritório de Pinheiros" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:26px">
+        </div>
+        <div class="zoom rv rv-r" data-parallax="-0.08" style="--d:.15s;position:absolute;right:0;bottom:0;width:50%;aspect-ratio:4/5;border-radius:22px;border:6px solid #FAF8F7;box-shadow:0 24px 50px rgba(27,23,23,.18)">
+          <img src="assets/ig/outubro-rosa.jpg" alt="Equipe Scatigno no Outubro Rosa" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:16px">
+        </div>
+        <div class="chip-float float f3" style="left:8%;bottom:6px">
+          <span style="font-size:28px;font-weight:800;color:#C42226;letter-spacing:-.03em">1967</span>
+          <span style="color:#5E5656">fundada em<br>São Paulo</span>
         </div>
       </div>
-
-      <div data-panel="empresa">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 21V9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 13h2M15 17h2"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro Empresarial</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Patrimônio, equipamentos, lucros cessantes e responsabilidade civil do seu negócio.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l5-3 5 3v13M13 21V11h8v10M2 21h20M6 11h4M6 15h4"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro Condomínio</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Cobertura obrigatória e coberturas extras para síndicos e administradoras.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Seguro de Transportes</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Carga protegida do embarque à entrega, para transportadoras e embarcadores.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Vida em Grupo e Saúde PME</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Benefícios que ajudam a atrair e reter a sua equipe.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver coberturas →</span>
-          </a>
-        </div>
-      </div>
-
-      <div data-panel="fin">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Consórcio</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Imóvel, veículo ou serviços: planejamento sem juros para conquistar o que você quer.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver opções →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Previdência Privada</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">PGBL ou VGBL: construa sua aposentadoria com orientação de quem entende.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver opções →</span>
-          </a>
-          <a href="seguro-auto.html" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 22px; border: 1px solid #EEE8E7; background: #FFFFFF; color: #1B1717">
-            <span style="width: 52px; height: 52px; border-radius: 14px; background: #FBEDEC; color: #C42226; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>
-            <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Financiamento e Crédito</span>
-            <span style="font-size: 15px; line-height: 1.55; color: #5E5656">Financiamento de veículos e crédito com as melhores condições do mercado.</span>
-            <span style="font-size: 15px; font-weight: 700; color: #C42226">Ver opções →</span>
-          </a>
+      <div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:18px">
+        <span class="eyebrow rv">Por que a Scatigno</span>
+        <h2 class="h2 rv" style="--d:.06s">Você não contrata uma apólice. Contrata quem cuida dela com você.</h2>
+        <p class="rv" style="--d:.12s;margin:0;font-size:17px;line-height:1.65;color:#5E5656">Há quase seis décadas a Scatigno acompanha pessoas, famílias e empresas em diferentes momentos da vida. Nosso trabalho começa antes da assinatura: analisamos riscos, explicamos cada cobertura e seguimos juntos durante toda a vigência.</p>
+        <div style="display:flex;flex-direction:column;gap:14px;padding-top:8px">
+          <div class="rv lift" style="--d:.18s;display:flex;gap:18px;padding:22px;border-radius:20px;background:#FFFFFF;border:1px solid #EEE8E7">
+            <span class="ico" style="flex:none;width:46px;height:46px;border-radius:999px;background:#FBEDEC;color:#C42226;display:flex;align-items:center;justify-content:center;font-weight:800">1</span>
+            <div><h3 style="margin:0 0 4px;font-size:18px;font-weight:800">Comparamos por você</h3><p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">Cotamos com as melhores seguradoras para chegar à cobertura certa pelo melhor custo.</p></div>
+          </div>
+          <div class="rv lift" style="--d:.24s;display:flex;gap:18px;padding:22px;border-radius:20px;background:#FFFFFF;border:1px solid #EEE8E7">
+            <span class="ico" style="flex:none;width:46px;height:46px;border-radius:999px;background:#FBEDEC;color:#C42226;display:flex;align-items:center;justify-content:center;font-weight:800">2</span>
+            <div><h3 style="margin:0 0 4px;font-size:18px;font-weight:800">Revisamos quando a vida muda</h3><p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">Carro novo, filho, empresa crescendo: a apólice acompanha a sua realidade, não a do ano passado.</p></div>
+          </div>
+          <div class="rv lift" style="--d:.3s;display:flex;gap:18px;padding:22px;border-radius:20px;background:#FFFFFF;border:1px solid #EEE8E7">
+            <span class="ico" style="flex:none;width:46px;height:46px;border-radius:999px;background:#FBEDEC;color:#C42226;display:flex;align-items:center;justify-content:center;font-weight:800">3</span>
+            <div><h3 style="margin:0 0 4px;font-size:18px;font-weight:800">Do seu lado no sinistro</h3><p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">Quando algo acontece, a gente orienta, acompanha e cobra a seguradora por você.</p></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Por que uma corretora -->
-  <section style="background: #FAF8F7">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
-      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-        <span style="font-size: 13px; font-weight: 700; color: #9E1A1E; letter-spacing: 0.08em; text-transform: uppercase">Por que a Scatigno</span>
-        <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800">Você não contrata uma apólice. Contrata quem cuida dela com você.</h2>
-        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #5E5656">Desde 1967, a Scatigno faz a ponte entre você e as seguradoras: compara, negocia, acompanha a vigência e defende o seu interesse quando algo acontece.</p>
-        <div role="img" aria-label="Espaço para foto da equipe Scatigno" style="margin-top: 12px; border-radius: 22px; background: #EFE9E8; height: 260px; display: flex; align-items: center; justify-content: center; color: #6B6262; font-size: 14px; font-weight: 600">[Foto: equipe Scatigno no escritório de Pinheiros]</div>
-      </div>
-      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-        <div style="display: flex; gap: 20px; padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #EEE8E7">
-          <span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #C42226; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px">1</span>
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <h3 style="margin: 0; font-size: 20px; font-weight: 800">Comparamos por você</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5E5656">Cotamos com as melhores seguradoras para chegar à melhor cobertura pelo menor custo — sem você precisar falar com cada uma.</p>
-          </div>
+  <!-- Cotação rápida -->
+  <section id="cotacao" style="background:#FFFFFF">
+    <div class="wrap" style="padding-top:96px;padding-bottom:96px">
+      <div class="rv rv-s" style="position:relative;overflow:hidden;border-radius:34px;background:#C42226;padding:clamp(28px,5vw,64px);display:flex;flex-wrap:wrap;gap:40px;align-items:center">
+        <img src="assets/mark-white.svg" alt="" aria-hidden="true" class="spin-slow" style="position:absolute;right:-140px;bottom:-160px;width:520px;height:520px;opacity:.1">
+        <div style="position:relative;flex:1 1 360px;min-width:0;color:#FFFFFF;display:flex;flex-direction:column;gap:14px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#FFE3E1">Cotação rápida</span>
+          <h2 class="h2">Conte o que você quer proteger. A gente faz o resto.</h2>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:#FFE3E1">Escolha o tipo de seguro e fale direto com um corretor pelo WhatsApp. Sem robô, sem compromisso.</p>
         </div>
-        <div style="display: flex; gap: 20px; padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #EEE8E7">
-          <span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #C42226; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px">2</span>
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <h3 style="margin: 0; font-size: 20px; font-weight: 800">Atendimento de gente, não de robô</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5E5656">Uma equipe qualificada que conhece o seu histórico e acompanha a apólice da contratação à renovação.</p>
+        <div style="position:relative;flex:1 1 400px;min-width:0;background:#FFFFFF;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:18px;box-shadow:0 24px 48px rgba(80,10,12,.25)">
+          <h3 style="margin:0;font-size:22px;font-weight:800;letter-spacing:-.01em">Que seguro você procura?</h3>
+          <div role="group" aria-label="Tipo de seguro" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+            <button type="button" class="chip" data-chip="Auto" aria-pressed="false">Auto</button><button type="button" class="chip" data-chip="Residencial" aria-pressed="false">Residencial</button><button type="button" class="chip" data-chip="Vida" aria-pressed="false">Vida</button><button type="button" class="chip" data-chip="Empresarial" aria-pressed="false">Empresarial</button><button type="button" class="chip" data-chip="Saúde" aria-pressed="false">Saúde</button><button type="button" class="chip" data-chip="Consórcio" aria-pressed="false">Consórcio</button>
           </div>
-        </div>
-        <div style="display: flex; gap: 20px; padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #EEE8E7">
-          <span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #C42226; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px">3</span>
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <h3 style="margin: 0; font-size: 20px; font-weight: 800">Do seu lado no sinistro</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #5E5656">Quando algo acontece, é a hora em que a corretora mais faz diferença. A gente orienta, acompanha e cobra a seguradora por você.</p>
-          </div>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600">Seu nome
+            <input id="qName" type="text" placeholder="Como podemos te chamar?" autocomplete="name" style="font:inherit;font-weight:500;padding:14px 16px;border-radius:12px;border:1.5px solid #E2DAD9;min-height:48px;box-sizing:border-box">
+          </label>
+          <a id="qGo" class="btn" href="https://wa.me/551136603660" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;padding:16px;border-radius:999px;background:#1B1717;color:#FFFFFF;min-height:52px">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>
+            Cotar <span id="selLabel">Seguro Auto</span> no WhatsApp
+          </a>
+          <span style="font-size:13px;color:#6B6262;text-align:center">Atendimento em horário comercial · (11) 3660-3660</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Sinistro -->
-  <section id="sinistro" style="background: #1B1717; color: #FFFFFF">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center; justify-content: space-between">
-      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-        <span style="align-self: flex-start; font-size: 13px; font-weight: 700; color: #FFB4B0; letter-spacing: 0.08em; text-transform: uppercase">Sinistro e Assistência 24h</span>
-        <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800">Aconteceu algo? Respira. A gente resolve com você.</h2>
-        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #D9D1D0">Guincho, chaveiro, colisão, roubo ou dano no imóvel: veja os telefones de assistência de cada seguradora e o passo a passo para abrir o seu sinistro.</p>
+  <section id="sinistro" style="background:#1B1717;color:#FFFFFF">
+    <div class="wrap" style="padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:48px;align-items:center;justify-content:space-between">
+      <div class="rv rv-l" style="flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:16px">
+        <span class="eyebrow" style="color:#FFB4B0">Sinistro e Assistência 24h</span>
+        <h2 class="h2">Aconteceu algo? Respira. A gente resolve com você.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.65;color:#D9D1D0">Guincho, chaveiro, colisão, roubo, alagamento ou dano no imóvel: veja os telefones de assistência de cada seguradora e o passo a passo para abrir o seu sinistro.</p>
       </div>
-      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <a href="tel:+551138257155" style="display: flex; align-items: center; gap: 16px; padding: 22px 24px; border-radius: 18px; background: #C42226; color: #FFFFFF">
+      <div class="rv rv-r" style="--d:.1s;flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:12px">
+        <a class="btn" href="tel:+551136603660" style="display:flex;align-items:center;gap:16px;padding:22px 24px;border-radius:18px;background:#C42226;color:#FFFFFF">
           <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-          <span style="display: flex; flex-direction: column"><span style="font-size: 13px; opacity: 0.85">Ligue para a Scatigno</span><span style="font-size: 22px; font-weight: 800">(11) 3825-7155</span></span>
+          <span style="display:flex;flex-direction:column"><span style="font-size:13px;opacity:.85">Ligue para a Scatigno</span><span style="font-size:22px;font-weight:800">(11) 3660-3660</span></span>
         </a>
-        <a href="#sinistro" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; border-radius: 18px; background: #2A2424; color: #FFFFFF; font-weight: 700; font-size: 16px">
-          Telefones de assistência por seguradora
-          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#sinistro" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; border-radius: 18px; background: #2A2424; color: #FFFFFF; font-weight: 700; font-size: 16px">
-          Como abrir um sinistro, passo a passo
-          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+        <a href="post.html" class="lift" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-radius:18px;background:#2A2424;color:#FFFFFF;font-weight:700;font-size:16px;border:1px solid #2A2424">Telefones de assistência por seguradora <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="post.html" class="lift" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-radius:18px;background:#2A2424;color:#FFFFFF;font-weight:700;font-size:16px;border:1px solid #2A2424">Bati o carro: o que fazer agora <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- Seguradoras parceiras -->
-  <section style="background: #FFFFFF">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px; display: flex; flex-direction: column; gap: 24px; align-items: center">
-      <span style="font-size: 14px; font-weight: 600; color: #5E5656">Trabalhamos com as principais seguradoras do país</span>
-      <div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px">
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
-        <div style="height: 64px; border-radius: 14px; background: #F6F2F1; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B6262">[Logo seguradora]</div>
+  <!-- Instagram -->
+  <section style="background:#FFFFFF">
+    <div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:36px">
+      <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end">
+        <div class="rv" style="display:flex;flex-direction:column;gap:12px;max-width:640px">
+          <span class="eyebrow">@scatignoseguros</span>
+          <h2 class="h2">Acompanhe a Scatigno no Instagram</h2>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:#5E5656">Dicas, bastidores e conteúdos para você proteger o que construiu.</p>
+        </div>
+        <a class="btn rv" href="https://www.instagram.com/scatignoseguros/" target="_blank" rel="noopener" style="--d:.1s;display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:#1B1717;color:#FFFFFF;font-weight:700">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Seguir no Instagram
+        </a>
+      </div>
+      <div class="ig-grid">
+        <a class="ig rv" style="--d:0s" href="https://www.instagram.com/p/DdrDPh2Aefk/" target="_blank" rel="noopener"><img src="assets/ig/tranquilidade-familia.jpg" alt="Post: Quanto vale a tranquilidade da sua família?" loading="lazy"><span class="ov"><b>Proteção familiar</b>Como dimensionar a proteção financeira da sua família.</span></a>
+        <a class="ig rv" style="--d:.06s" href="https://www.instagram.com/p/DePXi4kjATZ/" target="_blank" rel="noopener"><img src="assets/ig/carro-mudou.jpg" alt="Post: Seu carro mudou. Seu seguro acompanhou?" loading="lazy"><span class="ov"><b>Seguro Auto</b>Renovar não é só repetir a mesma apólice todo ano.</span></a>
+        <a class="ig rv" style="--d:.12s" href="https://www.instagram.com/p/DejsriUje2t/" target="_blank" rel="noopener"><img src="assets/ig/renda-pj.jpg" alt="Post: Se você parar de trabalhar, sua renda para junto?" loading="lazy"><span class="ov"><b>Renda PJ</b>Para autônomos e profissionais liberais.</span></a>
+        <a class="ig rv" style="--d:.18s" href="https://www.instagram.com/p/DcBXvfxjOBv/" target="_blank" rel="noopener"><img src="assets/ig/consorcio-casa.jpg" alt="Post: Financiamento ou consórcio?" loading="lazy"><span class="ov"><b>Consórcio</b>A escolha pode mudar o custo da sua conquista.</span></a>
+        <a class="ig rv" style="--d:.24s" href="https://www.instagram.com/p/DeHRFA3Cl0X/" target="_blank" rel="noopener"><img src="assets/ig/futuro-filhos.jpg" alt="Post: O futuro dos seus filhos já faz parte do seu planejamento?" loading="lazy"><span class="ov"><b>Planejamento</b>Faculdade, intercâmbio, primeiro imóvel.</span></a>
+        <a class="ig rv" style="--d:.3s" href="https://www.instagram.com/p/DdJk2pgEk6H/" target="_blank" rel="noopener"><img src="assets/ig/acho-chique.jpg" alt="Post: Coisas que eu acho chique, versão seguros" loading="lazy"><span class="ov"><b>Acho chique</b>Proteger o carro, a casa, a família e a viagem.</span></a>
       </div>
     </div>
   </section>
 
   <!-- Blog -->
-  <section style="background: #FAF8F7; border-top: 1px solid #EEE8E7">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: flex-end">
-        <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
-          <span style="font-size: 13px; font-weight: 700; color: #9E1A1E; letter-spacing: 0.08em; text-transform: uppercase">Blog Scatigno</span>
-          <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800">Seguro sem juridiquês</h2>
-          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5E5656">Guias práticos para entender coberturas, economizar sem ficar desprotegido e saber o que fazer quando algo acontece.</p>
+  <section style="background:#FAF8F7;border-top:1px solid #EEE8E7">
+    <div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:flex-end">
+        <div class="rv" style="display:flex;flex-direction:column;gap:12px;max-width:640px">
+          <span class="eyebrow">Blog Scatigno</span>
+          <h2 class="h2">Seguro sem juridiquês</h2>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:#5E5656">Guias práticos para entender coberturas, economizar sem ficar desprotegido e saber o que fazer quando algo acontece.</p>
         </div>
-        <a href="blog.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 22px; border-radius: 999px; border: 1.5px solid #E2DAD9; color: #1B1717; font-weight: 700; background: #FFFFFF">Ver todos os conteúdos →</a>
+        <a class="rv" href="blog.html" style="--d:.1s;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;border:1.5px solid #E2DAD9;color:#1B1717;font-weight:700;background:#FFFFFF">Ver todos os conteúdos →</a>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-        <a href="post.html" style="display: flex; flex-direction: column; gap: 16px; color: #1B1717">
-          <div role="img" aria-label="Imagem do post" style="height: 210px; border-radius: 20px; background: #C42226; position: relative; overflow: hidden"><img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position: absolute; right: -40px; bottom: -60px; width: 240px; height: 240px; opacity: 0.18"></div>
-          <span style="font-size: 13px; font-weight: 700; color: #9E1A1E">Seguro Auto · 6 min de leitura</span>
-          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em">Bati o carro: o que fazer nos primeiros 30 minutos</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5E5656">Um checklist simples para proteger você, registrar tudo certo e acionar o seguro sem dor de cabeça.</p>
+      <div class="grid-cards" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px">
+        <a href="post.html" class="rv lift" style="--d:0s;display:flex;flex-direction:column;gap:14px;color:#1B1717;border-radius:22px;padding:0 0 18px;border:1px solid transparent">
+          <div class="zoom" style="height:230px;border-radius:20px"><img src="assets/ig/carro-mudou.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></div>
+          <span style="font-size:13px;font-weight:700;color:#9E1A1E">Seguro Auto · 6 min de leitura</span>
+          <h3 style="margin:0;font-size:21px;line-height:1.3;font-weight:800;letter-spacing:-.01em">Bati o carro: o que fazer nos primeiros 30 minutos</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">Um checklist simples para proteger você, registrar tudo certo e acionar o seguro sem dor de cabeça.</p>
         </a>
-        <a href="post.html" style="display: flex; flex-direction: column; gap: 16px; color: #1B1717">
-          <div role="img" aria-label="Imagem do post" style="height: 210px; border-radius: 20px; background: #1B1717; position: relative; overflow: hidden"><img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position: absolute; right: -40px; bottom: -60px; width: 240px; height: 240px; opacity: 0.12"></div>
-          <span style="font-size: 13px; font-weight: 700; color: #9E1A1E">Residencial · 5 min de leitura</span>
-          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em">Seguro residencial para quem mora de aluguel: vale a pena?</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5E5656">O que o seguro do condomínio não cobre e por que o inquilino também precisa pensar nisso.</p>
+        <a href="post.html" class="rv lift" style="--d:.08s;display:flex;flex-direction:column;gap:14px;color:#1B1717;border-radius:22px;padding:0 0 18px;border:1px solid transparent">
+          <div class="zoom" style="height:230px;border-radius:20px"><img src="assets/ig/renda-pj.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block" loading="lazy"></div>
+          <span style="font-size:13px;font-weight:700;color:#9E1A1E">Renda PJ · 5 min de leitura</span>
+          <h3 style="margin:0;font-size:21px;line-height:1.3;font-weight:800;letter-spacing:-.01em">Sou PJ: se eu parar de trabalhar, como fica a minha renda?</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">O que é DIT, para quem faz sentido e como proteger a renda de autônomos e profissionais liberais.</p>
         </a>
-        <a href="post.html" style="display: flex; flex-direction: column; gap: 16px; color: #1B1717">
-          <div role="img" aria-label="Imagem do post" style="height: 210px; border-radius: 20px; background: #EFE9E8; position: relative; overflow: hidden"><img src="assets/mark-red.svg" alt="" aria-hidden="true" style="position: absolute; right: -40px; bottom: -60px; width: 240px; height: 240px; opacity: 0.14"></div>
-          <span style="font-size: 13px; font-weight: 700; color: #9E1A1E">Empresas · 7 min de leitura</span>
-          <h3 style="margin: 0; font-size: 21px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01em">Lucros cessantes: a cobertura que mantém sua empresa de pé</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5E5656">Entenda como funciona e por que ela costuma ficar de fora — até ser tarde demais.</p>
+        <a href="post.html" class="rv lift" style="--d:.16s;display:flex;flex-direction:column;gap:14px;color:#1B1717;border-radius:22px;padding:0 0 18px;border:1px solid transparent">
+          <div class="zoom" style="height:230px;border-radius:20px"><img src="assets/ig/consorcio-casa.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"></div>
+          <span style="font-size:13px;font-weight:700;color:#9E1A1E">Finanças · 6 min de leitura</span>
+          <h3 style="margin:0;font-size:21px;line-height:1.3;font-weight:800;letter-spacing:-.01em">Financiamento ou consórcio: qual faz mais sentido para você?</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">Prazo, juros, lance e urgência: um comparativo direto para decidir melhor.</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- CTA final -->
-  <section style="background: #FFFFFF">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
-      <div style="position: relative; overflow: hidden; border-radius: 32px; background: #C42226; color: #FFFFFF; padding: 64px 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
-        <img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position: absolute; left: -80px; top: -120px; width: 380px; height: 380px; opacity: 0.1">
-        <div style="position: relative; flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-          <h2 style="margin: 0; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800">Vamos encontrar o seguro certo para você?</h2>
-          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #FFE3E1">Conte o que você precisa proteger. A gente compara e te apresenta as melhores opções.</p>
+  <section style="background:#FFFFFF">
+    <div class="wrap" style="padding-top:88px;padding-bottom:88px">
+      <div class="rv rv-s" style="position:relative;overflow:hidden;border-radius:34px;background:#1B1717;color:#FFFFFF;padding:clamp(32px,5vw,64px);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+        <video src="assets/video/hero-loop.mp4" muted loop playsinline preload="none" data-autoplay aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28"></video>
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,23,23,.95),rgba(27,23,23,.55))"></div>
+        <div style="position:relative;flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:12px">
+          <h2 class="h2">Seu seguro vence em breve? Compare antes de renovar.</h2>
+          <p style="margin:0;font-size:17px;line-height:1.6;color:#D9D1D0">Uma revisão gratuita mostra se a sua apólice ainda acompanha a sua realidade.</p>
         </div>
-        <div style="position: relative; display: flex; flex-wrap: wrap; gap: 12px">
-          <a href="https://wa.me/5511953270751" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #FFFFFF; color: #9E1A1E; font-weight: 800; font-size: 16px">Cotar pelo WhatsApp</a>
-          <a href="tel:+551138257155" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; border: 1.5px solid rgba(255, 255, 255, 0.6); color: #FFFFFF; font-weight: 700; font-size: 16px">(11) 3825-7155</a>
+        <div style="position:relative;display:flex;flex-wrap:wrap;gap:12px">
+          <a class="btn pulse" href="https://wa.me/551136603660" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;background:#25D366;color:#0B3B1F;font-weight:800;font-size:16px">Falar no WhatsApp</a>
+          <a href="tel:+551136603660" style="display:inline-flex;align-items:center;padding:16px 26px;border-radius:999px;border:1.5px solid rgba(255,255,255,.5);color:#FFFFFF;font-weight:700;font-size:16px">(11) 3660-3660</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer style="background: #1B1717; color: #D9D1D0">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 48px">
-      <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
-        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 18px; max-width: 380px">
-          <img src="assets/logo-oficial-branco.png" alt="Scatigno Seguros" style="height: 56px; width: auto; align-self: flex-start">
-          <p style="margin: 0; font-size: 15px; line-height: 1.6">Receba nossos conteúdos sobre seguros e finanças. Um e-mail por mês, sem spam.</p>
-          <form style="display: flex; flex-wrap: wrap; gap: 8px">
-            <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #D9D1D0">E-mail
-              <input type="email" placeholder="seu@email.com" style="font: inherit; font-size: 15px; padding: 13px 16px; border-radius: 12px; border: 1px solid #3A3333; background: #241F1F; color: #FFFFFF; min-height: 48px; box-sizing: border-box">
+  <footer style="background:#1B1717;color:#D9D1D0">
+    <div class="wrap" style="padding-top:72px;padding-bottom:32px;display:flex;flex-direction:column;gap:48px">
+      <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:18px;max-width:380px">
+          <img src="assets/logo-oficial-branco.png" alt="Scatigno Seguros" style="height:52px;width:auto;align-self:flex-start">
+          <p style="margin:0;font-size:15px;line-height:1.6">Receba nossos conteúdos sobre seguros e finanças. Um e-mail por mês, sem spam.</p>
+          <form style="display:flex;flex-wrap:wrap;gap:8px" onsubmit="return false">
+            <label style="flex:1 1 200px;display:flex;flex-direction:column;gap:6px;font-size:13px">E-mail
+              <input type="email" placeholder="seu@email.com" style="font:inherit;font-size:15px;padding:13px 16px;border-radius:12px;border:1px solid #3A3333;background:#241F1F;color:#FFFFFF;min-height:48px;box-sizing:border-box">
             </label>
-            <button type="button" style="align-self: flex-end; font: inherit; font-weight: 700; font-size: 15px; padding: 13px 20px; border-radius: 12px; border: 0; background: #C42226; color: #FFFFFF; min-height: 48px; cursor: pointer">Assinar</button>
+            <button type="submit" style="align-self:flex-end;font:inherit;font-weight:700;font-size:15px;padding:13px 20px;border-radius:12px;border:0;background:#C42226;color:#FFFFFF;min-height:48px;cursor:pointer">Assinar</button>
           </form>
+          <div style="display:flex;gap:10px">
+            <a href="https://www.instagram.com/scatignoseguros/" target="_blank" rel="noopener" aria-label="Instagram da Scatigno" style="width:44px;height:44px;border-radius:12px;background:#2A2424;color:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://www.facebook.com/Scatigno-Seguros-1389961894576752" target="_blank" rel="noopener" aria-label="Facebook da Scatigno" style="width:44px;height:44px;border-radius:12px;background:#2A2424;color:#fff;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
         </div>
-        <div style="flex: 2 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 32px; font-size: 15px">
-          <div style="display: flex; flex-direction: column; gap: 12px">
-            <span style="color: #FFFFFF; font-weight: 700">Para você</span>
-            <a href="seguro-auto.html" style="color: #D9D1D0">Seguro Auto</a>
-            <a href="#seguros" style="color: #D9D1D0">Residencial</a>
-            <a href="#seguros" style="color: #D9D1D0">Vida</a>
-            <a href="#seguros" style="color: #D9D1D0">Saúde e Odonto</a>
-            <a href="#seguros" style="color: #D9D1D0">Fiança Aluguel</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 12px">
-            <span style="color: #FFFFFF; font-weight: 700">Para empresas</span>
-            <a href="#seguros" style="color: #D9D1D0">Empresarial</a>
-            <a href="#seguros" style="color: #D9D1D0">Condomínio</a>
-            <a href="#seguros" style="color: #D9D1D0">Transportes</a>
-            <a href="#seguros" style="color: #D9D1D0">Vida em Grupo</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 12px">
-            <span style="color: #FFFFFF; font-weight: 700">Soluções financeiras</span>
-            <a href="#seguros" style="color: #D9D1D0">Consórcio</a>
-            <a href="#seguros" style="color: #D9D1D0">Previdência</a>
-            <a href="#seguros" style="color: #D9D1D0">Financiamento</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 12px">
-            <span style="color: #FFFFFF; font-weight: 700">Scatigno</span>
-            <a href="#sobre" style="color: #D9D1D0">Sobre nós</a>
-            <a href="blog.html" style="color: #D9D1D0">Blog</a>
-            <a href="#sinistro" style="color: #D9D1D0">Sinistro 24h</a>
-            <a href="#cotacao" style="color: #D9D1D0">Indique a Scatigno</a>
-          </div>
+        <div style="flex:2 1 560px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:32px;font-size:15px">
+          <div style="display:flex;flex-direction:column;gap:12px"><span style="color:#FFFFFF;font-weight:700">Para você</span><a href="seguro-auto.html" style="color:#D9D1D0">Seguro Auto</a><a href="#seguros" style="color:#D9D1D0">Residencial</a><a href="#seguros" style="color:#D9D1D0">Vida</a><a href="#seguros" style="color:#D9D1D0">Renda PJ</a></div>
+          <div style="display:flex;flex-direction:column;gap:12px"><span style="color:#FFFFFF;font-weight:700">Para empresas</span><a href="#seguros" style="color:#D9D1D0">Empresarial</a><a href="#seguros" style="color:#D9D1D0">Condomínio</a><a href="#seguros" style="color:#D9D1D0">Transportes</a><a href="#seguros" style="color:#D9D1D0">Vida em Grupo</a></div>
+          <div style="display:flex;flex-direction:column;gap:12px"><span style="color:#FFFFFF;font-weight:700">Soluções financeiras</span><a href="#seguros" style="color:#D9D1D0">Consórcio</a><a href="#seguros" style="color:#D9D1D0">Previdência</a><a href="#seguros" style="color:#D9D1D0">Financiamento</a></div>
+          <div style="display:flex;flex-direction:column;gap:12px"><span style="color:#FFFFFF;font-weight:700">Scatigno</span><a href="#sobre" style="color:#D9D1D0">Sobre nós</a><a href="blog.html" style="color:#D9D1D0">Blog</a><a href="#sinistro" style="color:#D9D1D0">Sinistro 24h</a><a href="#cotacao" style="color:#D9D1D0">Indique a Scatigno</a></div>
         </div>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px 40px; padding-top: 28px; border-top: 1px solid #332C2C; font-size: 14px; line-height: 1.6">
+      <div style="display:flex;flex-wrap:wrap;gap:16px 40px;padding-top:28px;border-top:1px solid #332C2C;font-size:14px;line-height:1.6">
         <span>Av. Pedroso de Morais, 1533, cj. 41 · Pinheiros · São Paulo/SP · 05419-001</span>
-        <span>(11) 3825-7155 · WhatsApp (11) 95327-0751</span>
+        <span>(11) 3660-3660 · telefone e WhatsApp</span>
         <span>scatigno@scatignoseguros.com.br</span>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; font-size: 13px; color: #A99F9E">
+      <div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;font-size:13px;color:#A99F9E">
         <span>© 2026 Scatigno Seguros · CNPJ [00.000.000/0000-00] · Registro SUSEP [nº]</span>
-        <span style="display: flex; gap: 20px"><a href="#" style="color: #A99F9E">Política de privacidade</a><a href="#" style="color: #A99F9E">Termos de uso</a></span>
+        <span style="display:flex;gap:20px"><a href="#" style="color:#A99F9E">Política de privacidade</a><a href="#" style="color:#A99F9E">Termos de uso</a></span>
       </div>
     </div>
   </footer>
 </div>
 
+<!-- WhatsApp flutuante -->
+<a class="wa-fab pulse" href="https://wa.me/551136603660" target="_blank" rel="noopener" aria-label="Falar com a Scatigno no WhatsApp">
+  <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 .2C5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.2 23.8l6.1-1.6c1.7.9 3.7 1.4 5.7 1.4 6.5 0 11.8-5.3 11.8-11.8S18.5.2 12 .2z"/></svg>
+</a>
+
+<!-- Modal de vídeo -->
+<div id="vmodal" class="vmodal" role="dialog" aria-modal="true" aria-label="Vídeo da Scatigno">
+  <button type="button" class="close" aria-label="Fechar vídeo">×</button>
+  <video controls playsinline></video>
+</div>
+
+<script src="assets/site.js"></script>
 <script>
-var labels={'Auto':'Seguro Auto','Residencial':'Seguro Residencial','Vida':'Seguro de Vida','Empresarial':'Seguro Empresarial','Saúde':'Saúde','Consórcio':'Consórcio'};
-function pickChip(n){document.querySelectorAll('.chip').forEach(function(b){var on=b.dataset.chip===n;b.setAttribute('aria-pressed',on);b.classList.toggle('on',on)});document.getElementById('selLabel').textContent=labels[n];}
-function pickTab(t){document.querySelectorAll('.tab').forEach(function(b){var on=b.dataset.tab===t;b.setAttribute('aria-selected',on);b.classList.toggle('on',on)});document.querySelectorAll('[data-panel]').forEach(function(p){p.hidden=p.dataset.panel!==t});}
+var labels={'Auto':'Seguro Auto','Residencial':'Seguro Residencial','Vida':'Seguro de Vida','Empresarial':'Seguro Empresarial','Saúde':'Plano de Saúde','Consórcio':'Consórcio'};
+var cur='Auto';
+function waLink(){var n=(document.getElementById('qName').value||'').trim();var msg='Olá, Scatigno! '+(n?'Meu nome é '+n+'. ':'')+'Gostaria de uma cotação de '+labels[cur]+'.';document.getElementById('qGo').href='https://wa.me/551136603660?text='+encodeURIComponent(msg);}
+function pickChip(n){cur=n;document.querySelectorAll('.chip').forEach(function(b){var on=b.dataset.chip===n;b.setAttribute('aria-pressed',on);b.classList.toggle('on',on)});document.getElementById('selLabel').textContent=labels[n];waLink();}
+function pickTab(t){document.querySelectorAll('.tab').forEach(function(b){var on=b.dataset.tab===t;b.setAttribute('aria-selected',on);b.classList.toggle('on',on)});document.querySelectorAll('[data-panel]').forEach(function(p){var show=p.dataset.panel===t;p.hidden=!show;if(show){p.querySelectorAll('.card').forEach(function(c,i){c.animate&&c.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:500,delay:i*60,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards'})})}});}
 document.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){pickChip(b.dataset.chip)}});
 document.querySelectorAll('.tab').forEach(function(b){b.onclick=function(){pickTab(b.dataset.tab)}});
+document.getElementById('qName').addEventListener('input',waLink);
 pickChip('Auto');pickTab('voce');
-var mb=document.querySelector('.menu-btn'),mn=document.getElementById('mainnav');if(mb){mb.onclick=function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')};mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');mb.setAttribute('aria-expanded',false)})})}</script>
+var mb=document.querySelector('.menu-btn'),mn=document.getElementById('mainnav');mb.onclick=function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')};mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');mb.setAttribute('aria-expanded',false)})});
+</script>
 </body>
 </html>

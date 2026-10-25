@@ -1,0 +1,130 @@
+/* ===== Scatigno — camada de movimento compartilhada ===== */
+[hidden]{display:none!important}
+:root{--red:#C42226;--red-d:#9E1A1E;--ink:#1B1717;--muted:#5E5656;--line:#EEE8E7;--soft:#FAF8F7;--blush:#FBEDEC}
+
+/* Revelar ao rolar */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.rv-l{transform:translateX(-36px)}
+.rv.rv-r{transform:translateX(36px)}
+.rv.rv-s{transform:scale(.94)}
+.rv.in{opacity:1;transform:none}
+
+/* Cards com elevação */
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.lift:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(27,23,23,.10);border-color:#E2C9C7}
+.lift .arrow{display:inline-block;transition:transform .3s}
+.lift:hover .arrow{transform:translateX(5px)}
+.lift .ico{transition:transform .4s cubic-bezier(.3,1.6,.5,1),background .3s,color .3s}
+.lift:hover .ico{transform:rotate(-8deg) scale(1.08);background:var(--red)!important;color:#fff!important}
+
+/* Botões */
+.btn{transition:transform .2s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(196,34,38,.28)}
+.btn:active{transform:translateY(0)}
+
+/* Faixa rolante (marquee) */
+.marquee{overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee-track{display:inline-flex;gap:48px;padding-right:48px;animation:mq 38s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* Flutuar */
+.float{animation:fl 6s ease-in-out infinite}
+.float.f2{animation-duration:7.5s;animation-delay:-2s}
+.float.f3{animation-duration:9s;animation-delay:-4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* Palavra rotativa do hero */
+.rot{display:inline-grid;vertical-align:bottom}
+.rot > span{grid-area:1/1;color:var(--red);opacity:0;transform:translateY(60%);transition:opacity .5s,transform .6s cubic-bezier(.2,.7,.2,1);white-space:nowrap}
+.rot > span.on{opacity:1;transform:none}
+.rot > span.out{opacity:0;transform:translateY(-60%)}
+
+/* S girando suave no fundo */
+.spin-slow{animation:sp 60s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* Pulso do botão de WhatsApp */
+.pulse{position:relative}
+.pulse::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(37,211,102,.55);animation:pl 2.4s infinite}
+@keyframes pl{70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* Botão flutuante WhatsApp */
+.wa-fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:999px;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25);transform:scale(0);transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.wa-fab.show{transform:scale(1)}
+.wa-fab:hover{color:#fff}
+
+/* Barra de progresso de leitura */
+.progress{position:fixed;left:0;top:0;height:3px;background:var(--red);width:0;z-index:70;transition:width .1s linear}
+
+/* Cards de vídeo (reels) */
+.reels{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 24px 26px;scrollbar-width:none}
+.reels::-webkit-scrollbar{display:none}
+.reel{flex:0 0 auto;width:min(260px,68vw);aspect-ratio:9/16;border-radius:24px;overflow:hidden;position:relative;scroll-snap-align:start;background:#222;border:0;padding:0;cursor:pointer;color:#fff;text-align:left;font:inherit;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.reel:hover{transform:translateY(-8px) rotate(-.6deg);box-shadow:0 26px 50px rgba(0,0,0,.28)}
+.reel video,.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.78))}
+.reel .meta{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.reel .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;background:var(--red);padding:5px 10px;border-radius:999px}
+.reel .ttl{font-size:18px;font-weight:800;line-height:1.25}
+.reel .play{position:absolute;top:16px;right:16px;z-index:2;width:44px;height:44px;border-radius:999px;background:rgba(255,255,255,.22);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;transition:transform .3s,background .3s}
+.reel:hover .play{transform:scale(1.12);background:var(--red)}
+
+/* Modal de vídeo */
+.vmodal{position:fixed;inset:0;z-index:100;background:rgba(15,10,10,.86);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s}
+.vmodal.open{opacity:1;pointer-events:auto}
+.vmodal video{max-height:88vh;max-width:min(92vw,500px);border-radius:22px;background:#000;transform:scale(.92);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.vmodal.open video{transform:none}
+.vmodal .close{position:absolute;top:18px;right:18px;width:48px;height:48px;border-radius:999px;border:0;background:#fff;color:var(--ink);font-size:26px;cursor:pointer}
+
+/* Grade do Instagram */
+.ig-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+@media (max-width:1000px){.ig-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.ig-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ig{position:relative;display:block;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#eee}
+.ig img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ig:hover img{transform:scale(1.08)}
+.ig .ov{position:absolute;inset:0;background:rgba(158,26,30,.82);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:16px;opacity:0;transition:opacity .35s;font-size:14px;line-height:1.45}
+.ig:hover .ov,.ig:focus-visible .ov{opacity:1}
+
+/* Imagens com zoom suave */
+.zoom{overflow:hidden}
+.zoom img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover img{transform:scale(1.05)}
+
+/* Vídeo do hero */
+.hero-video{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:9/14;background:#1B1717;box-shadow:0 40px 80px rgba(80,10,12,.25)}
+.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-video .sound{position:absolute;right:16px;bottom:16px;z-index:3;display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:999px;border:0;background:rgba(255,255,255,.9);color:var(--ink);font:inherit;font-weight:700;font-size:14px;cursor:pointer;min-height:44px}
+.chip-float{position:absolute;z-index:3;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 18px 40px rgba(27,23,23,.16);display:flex;gap:12px;align-items:center;font-size:14px;line-height:1.3}
+
+/* Linha do tempo */
+.tl-dot{width:14px;height:14px;border-radius:999px;background:var(--red);box-shadow:0 0 0 6px var(--blush)}
+
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1!important;transform:none!important;transition:none!important}
+  .marquee-track,.float,.spin-slow,.pulse::after{animation:none!important}
+  .rot > span{transition:none}
+}
+
+/* ===== Componentes base (chips, abas, menu mobile) ===== */
+.chip{font:inherit;font-size:14px;font-weight:700;padding:12px 8px;border-radius:12px;min-height:46px;cursor:pointer;background:#FFFFFF;color:#1B1717;border:1.5px solid #E2DAD9}
+.chip.on{background:#C42226;color:#FFFFFF;border-color:#C42226}
+.chip.pill{padding:11px 18px;border-radius:999px;min-height:44px}
+.chip.pill.on{background:#1B1717;border-color:#1B1717}
+.tab{font:inherit;font-size:15px;font-weight:700;padding:12px 20px;border-radius:999px;border:0;min-height:44px;cursor:pointer;background:transparent;color:#5E5656}
+.tab.on{background:#FFFFFF;color:#1B1717;box-shadow:0 2px 8px rgba(27,23,23,.10)}
+summary::-webkit-details-marker{display:none}
+details[open] .sign{font-size:0}details[open] .sign::after{content:"−";font-size:20px}
+html{scroll-behavior:smooth}
+.menu-btn{display:none}
+@media (max-width:900px){
+ header > div{flex-wrap:wrap!important;gap:10px!important}
+ header > div > a:first-child img{height:34px!important}
+ .menu-btn{display:flex;order:3;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;border:1.5px solid #E2DAD9;background:#fff;color:#1B1717;cursor:pointer;margin-left:8px}
+ header > div > a:last-child{order:2;margin-left:auto;padding:10px 14px!important;font-size:13.5px!important}
+ .mainnav{display:none!important;order:4;width:100%;flex-direction:column;gap:0!important;border-top:1px solid #EEE8E7;padding-top:6px}
+ .mainnav.open{display:flex!important}
+ .mainnav a{padding:14px 0!important;border-bottom:1px solid #F3EEED}
+ .topbar-txt{display:none}
+}[id]{scroll-margin-top:110px}

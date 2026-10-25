@@ -14,35 +14,16 @@ body{margin:0;background:#FFFFFF}
 a{color:#C42226;text-decoration:none}a:hover{color:#9E1A1E}
 </style>
 
-<style>
-.chip{font:inherit;font-size:14px;font-weight:700;padding:12px 8px;border-radius:12px;min-height:46px;cursor:pointer;background:#FFFFFF;color:#1B1717;border:1.5px solid #E2DAD9}
-.chip.on{background:#C42226;color:#FFFFFF;border-color:#C42226}
-.chip.pill{padding:11px 18px;border-radius:999px;min-height:44px}
-.chip.pill.on{background:#1B1717;border-color:#1B1717}
-.tab{font:inherit;font-size:15px;font-weight:700;padding:12px 20px;border-radius:999px;border:0;min-height:44px;cursor:pointer;background:transparent;color:#5E5656}
-.tab.on{background:#FFFFFF;color:#1B1717;box-shadow:0 2px 8px rgba(27,23,23,.10)}
-summary::-webkit-details-marker{display:none}
-details[open] .sign{font-size:0}details[open] .sign::after{content:"−";font-size:20px}
-html{scroll-behavior:smooth}
-.menu-btn{display:none}
-@media (max-width:900px){
- header > div{flex-wrap:wrap!important;gap:10px!important}
- header > div > a:first-child img{height:34px!important}
- .menu-btn{display:flex;order:3;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;border:1.5px solid #E2DAD9;background:#fff;color:#1B1717;cursor:pointer;margin-left:8px}
- header > div > a:last-child{order:2;margin-left:auto;padding:10px 14px!important;font-size:13.5px!important}
- .mainnav{display:none!important;order:4;width:100%;flex-direction:column;gap:0!important;border-top:1px solid #EEE8E7;padding-top:6px}
- .mainnav.open{display:flex!important}
- .mainnav a{padding:14px 0!important;border-bottom:1px solid #F3EEED}
- .topbar-txt{display:none}
-}[id]{scroll-margin-top:110px}
-</style>
+
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
 <div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #1B1717; background: #FFFFFF; width: 100%; min-height: 100vh">
 
   <!-- Header -->
-  <header style="background: #FFFFFF; border-bottom: 1px solid #EEE8E7; position: sticky; top: 0; z-index: 10">
+  <header style="background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #EEE8E7; position: sticky; top: 0; z-index: 10">
     <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
       <a href="index.html" aria-label="Scatigno Seguros — início" style="display: flex">
         <img src="assets/logo-oficial-cor.png" alt="Scatigno Seguros" style="height: 48px; width: auto; display: block">
@@ -55,7 +36,7 @@ html{scroll-behavior:smooth}
         <a href="blog.html" style="color: #C42226; padding: 10px 0">Blog</a>
         <a href="index.html" style="color: #1B1717; padding: 10px 0">Sobre</a>
       </nav>
-      <a href="https://wa.me/5511953270751" style="display: inline-flex; align-items: center; padding: 12px 18px; border-radius: 999px; background: #C42226; color: #FFFFFF; font-weight: 700; font-size: 15px; min-height: 44px; box-sizing: border-box">Fazer cotação</a>
+      <a href="https://wa.me/551136603660" class="btn" style="display: inline-flex; align-items: center; padding: 12px 18px; border-radius: 999px; background: #C42226; color: #FFFFFF; font-weight: 700; font-size: 15px; min-height: 44px; box-sizing: border-box">Fazer cotação</a>
     </div>
   </header>
 
@@ -65,7 +46,7 @@ html{scroll-behavior:smooth}
       <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
         <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
           <span style="font-size: 13px; font-weight: 700; color: #9E1A1E; letter-spacing: 0.08em; text-transform: uppercase">Blog Scatigno</span>
-          <h1 style="margin: 0; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800">Seguro sem juridiquês</h1>
+          <h1 class="rv" style="margin: 0; font-size: clamp(38px, 5vw, 58px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800">Seguro sem juridiquês</h1>
           <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E5656">Guias práticos de quem está há quase 60 anos do lado do segurado.</p>
         </div>
         <label style="flex: 0 1 360px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Buscar no blog
@@ -82,12 +63,12 @@ html{scroll-behavior:smooth}
   <section style="background: #FFFFFF">
     <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 24px">
       <a href="post.html" style="display: flex; flex-wrap: wrap; gap: 0; border-radius: 28px; overflow: hidden; border: 1px solid #EEE8E7; color: #1B1717; background: #FFFFFF">
-        <div role="img" aria-label="Imagem de destaque do post" style="flex: 1 1 460px; min-height: 340px; background: #C42226; position: relative; overflow: hidden">
-          <img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position: absolute; right: -60px; bottom: -90px; width: 400px; height: 400px; opacity: 0.18">
+        <div class="zoom" style="flex: 1 1 460px; min-height: 340px; background: #1B1717; position: relative; overflow: hidden">
+          <img src="assets/ig/carro-mudou.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
         </div>
         <div style="flex: 1 1 420px; min-width: 0; padding: 44px; display: flex; flex-direction: column; gap: 16px; justify-content: center">
           <span style="font-size: 13px; font-weight: 700; color: #9E1A1E">Em destaque · Sinistro na prática · 6 min</span>
-          <h2 style="margin: 0; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800">Bati o carro: o que fazer nos primeiros 30 minutos</h2>
+          <h2 class="rv" style="margin: 0; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800">Bati o carro: o que fazer nos primeiros 30 minutos</h2>
           <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5E5656">Um checklist simples para proteger você, registrar tudo certo e acionar o seguro sem dor de cabeça.</p>
           <span style="font-weight: 700; color: #C42226">Ler artigo →</span>
         </div>
@@ -114,7 +95,7 @@ html{scroll-behavior:smooth}
   <section style="background: #1B1717; color: #FFFFFF">
     <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: center">
       <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
-        <h2 style="margin: 0; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800">Um e-mail por mês. Só o que importa.</h2>
+        <h2 class="rv" style="margin: 0; font-size: clamp(26px, 3vw, 36px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800">Um e-mail por mês. Só o que importa.</h2>
         <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D9D1D0">Novos guias, mudanças no mercado de seguros e lembretes úteis para a renovação.</p>
       </div>
       <form style="flex: 1 1 380px; display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end">
@@ -128,7 +109,7 @@ html{scroll-behavior:smooth}
   <footer style="background: #1B1717; color: #A99F9E; font-size: 14px; border-top: 1px solid #332C2C">
     <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: center">
       <img src="assets/logo-oficial-branco.png" alt="Scatigno Seguros" style="height: 40px; width: auto">
-      <span>Av. Pedroso de Morais, 1533, cj. 41 · Pinheiros · São Paulo/SP · (11) 3825-7155</span>
+      <span>Av. Pedroso de Morais, 1533, cj. 41 · Pinheiros · São Paulo/SP · (11) 3660-3660</span>
       <span>Registro SUSEP [nº]</span>
     </div>
   </footer>
@@ -136,15 +117,15 @@ html{scroll-behavior:smooth}
 
 <script>
 var all=[
-      { cat: 'Seguro Auto', time: '5 min', title: 'Franquia reduzida ou normal: qual escolher?', excerpt: 'Como pesar o preço do seguro contra o valor que você paga em cada conserto.' },
-      { cat: 'Residencial', time: '5 min', title: 'Seguro residencial para quem mora de aluguel: vale a pena?', excerpt: 'O que o seguro do condomínio não cobre e por que o inquilino também precisa pensar nisso.' },
-      { cat: 'Empresas', time: '7 min', title: 'Lucros cessantes: a cobertura que mantém sua empresa de pé', excerpt: 'Como funciona e por que costuma ficar de fora — até ser tarde demais.' },
-      { cat: 'Vida', time: '4 min', title: 'Seguro de vida não é só para quem tem filhos', excerpt: 'Coberturas em vida, como doenças graves e invalidez, que protegem você mesmo.' },
-      { cat: 'Sinistro na prática', time: '6 min', title: 'Imóvel alagado: como acionar o seguro', excerpt: 'Fotos, notas e prazos: o que reunir para a indenização sair sem atraso.' },
-      { cat: 'Finanças', time: '6 min', title: 'Consórcio ou financiamento: qual faz mais sentido para você?', excerpt: 'Prazo, juros, lance e urgência: um comparativo direto para decidir melhor.' },
-      { cat: 'Seguro Auto', time: '4 min', title: 'Classe de bônus: como não perder o desconto na renovação', excerpt: 'O bônus é seu e pode ir com você para outra seguradora. Veja como.' },
-      { cat: 'Empresas', time: '5 min', title: 'Seguro condomínio: o que o síndico precisa saber', excerpt: 'Cobertura obrigatória, responsabilidade civil do síndico e coberturas extras.' },
-      { cat: 'Finanças', time: '5 min', title: 'PGBL ou VGBL: entenda a diferença de uma vez', excerpt: 'Qual plano de previdência combina com a sua declaração de imposto de renda.' }
+      { cat: 'Seguro Auto', time: '5 min', title: 'Franquia reduzida ou normal: qual escolher?', img: 'carro-mudou', excerpt: 'Como pesar o preço do seguro contra o valor que você paga em cada conserto.' },
+      { cat: 'Residencial', time: '5 min', title: 'Seguro residencial para quem mora de aluguel: vale a pena?', img: 'protecao-familiar', excerpt: 'O que o seguro do condomínio não cobre e por que o inquilino também precisa pensar nisso.' },
+      { cat: 'Empresas', time: '7 min', title: 'Lucros cessantes: a cobertura que mantém sua empresa de pé', img: 'renda-pj', excerpt: 'Como funciona e por que costuma ficar de fora — até ser tarde demais.' },
+      { cat: 'Vida', time: '4 min', title: 'Seguro de vida não é só para quem tem filhos', img: 'ao-seu-lado', excerpt: 'Coberturas em vida, como doenças graves e invalidez, que protegem você mesmo.' },
+      { cat: 'Sinistro na prática', time: '6 min', title: 'Imóvel alagado: como acionar o seguro', img: 'consorcio-casa', excerpt: 'Fotos, notas e prazos: o que reunir para a indenização sair sem atraso.' },
+      { cat: 'Finanças', time: '6 min', title: 'Consórcio ou financiamento: qual faz mais sentido para você?', img: 'consorcio-casa', excerpt: 'Prazo, juros, lance e urgência: um comparativo direto para decidir melhor.' },
+      { cat: 'Seguro Auto', time: '4 min', title: 'Classe de bônus: como não perder o desconto na renovação', img: 'carro-mudou', excerpt: 'O bônus é seu e pode ir com você para outra seguradora. Veja como.' },
+      { cat: 'Empresas', time: '5 min', title: 'Seguro condomínio: o que o síndico precisa saber', img: 'equipe', excerpt: 'Cobertura obrigatória, responsabilidade civil do síndico e coberturas extras.' },
+      { cat: 'Finanças', time: '5 min', title: 'PGBL ou VGBL: entenda a diferença de uma vez', img: 'futuro-filhos', excerpt: 'Qual plano de previdência combina com a sua declaração de imposto de renda.' }
     ];
 var covers=['#C42226','#1B1717','#9E1A1E'];var cats=['Todos','Seguro Auto','Residencial','Vida','Empresas','Finanças','Sinistro na prática'];var cur='Todos';
 function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -153,9 +134,12 @@ function render(){
  document.querySelectorAll('#cats button').forEach(function(b){b.onclick=function(){cur=b.dataset.c;render()}});
  var list=all.filter(function(p){return cur==='Todos'||p.cat===cur});
  document.getElementById('count').textContent=list.length===1?'1 conteúdo':list.length+' conteúdos';
- document.getElementById('grid').innerHTML=list.map(function(p,i){return '<a href="post.html" style="display:flex;flex-direction:column;gap:14px;color:#1B1717"><div role="img" aria-label="Imagem do post" style="height:200px;border-radius:20px;position:relative;overflow:hidden;background:'+covers[i%3]+'"><img src="assets/mark-white.svg" alt="" aria-hidden="true" style="position:absolute;right:-40px;bottom:-60px;width:220px;height:220px;opacity:.16"></div><span style="font-size:13px;font-weight:700;color:#9E1A1E">'+esc(p.cat)+' · '+esc(p.time)+' de leitura</span><h3 style="margin:0;font-size:20px;line-height:1.3;font-weight:800;letter-spacing:-0.01em">'+esc(p.title)+'</h3><p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">'+esc(p.excerpt)+'</p></a>'}).join('');
+ document.getElementById('grid').innerHTML=list.map(function(p,i){return '<a href="post.html" class="rv in" style="display:flex;flex-direction:column;gap:14px;color:#1B1717"><div class="zoom" style="height:220px;border-radius:20px;position:relative;overflow:hidden;background:#eee"><img src="assets/ig/'+p.img+'.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><span style="font-size:13px;font-weight:700;color:#9E1A1E">'+esc(p.cat)+' · '+esc(p.time)+' de leitura</span><h3 style="margin:0;font-size:20px;line-height:1.3;font-weight:800;letter-spacing:-0.01em">'+esc(p.title)+'</h3><p style="margin:0;font-size:15px;line-height:1.6;color:#5E5656">'+esc(p.excerpt)+'</p></a>'}).join('');
+ document.querySelectorAll('#grid > a').forEach(function(a,i){a.animate&&a.animate([{opacity:0,transform:'translateY(20px)'},{opacity:1,transform:'none'}],{duration:500,delay:i*70,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards'})});
 }
 render();
 var mb=document.querySelector('.menu-btn'),mn=document.getElementById('mainnav');if(mb){mb.onclick=function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')};mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');mb.setAttribute('aria-expanded',false)})})}</script>
+<a class="wa-fab pulse" href="https://wa.me/551136603660" target="_blank" rel="noopener" aria-label="Falar com a Scatigno no WhatsApp"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .2C5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.2 23.8l6.1-1.6c1.7.9 3.7 1.4 5.7 1.4 6.5 0 11.8-5.3 11.8-11.8S18.5.2 12 .2zm0 21.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zm5.5-7.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+<script src="assets/site.js"></script>
 </body>
 </html>
